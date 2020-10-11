@@ -4,7 +4,8 @@
   "description": "A simple and clean startpage",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.pug"
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug -d docs"
   },
   "repository": {
     "type": "git",

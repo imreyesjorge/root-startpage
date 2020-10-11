@@ -1,8 +1,58 @@
+-
+  const cards = [
+    {
+      name: 'Twitter',
+      icon: 'fab fa-twitter',
+      link: 'https://twitter.com/'
+    },
+    {
+      name: 'Columns',
+      icon: 'fas fa-columns',
+      link: 'https://columns.app/'
+    },
+    {
+      name: 'Dribbble',
+      icon: 'fab fa-dribbble',
+      link: 'https://dribbble.com/'
+    },
+    {
+      name: 'Reddit',
+      icon: 'fab fa-reddit',
+      link: 'https://www.reddit.com/'
+    },
+    {
+      name: 'Github',
+      icon: 'fab fa-github',
+      link: 'https://github.com/'
+    }
+  ]
+
 <!DOCTYPE html>
 html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title root: ~#
+    script(src="https://kit.fontawesome.com/2dadafacbc.js" crossorigin="anonymous")
     link(rel="stylesheet", href="styles/main.scss")
   body
+    header.header
+      .header__left
+        h2.header__greet Hello there,
+          | 
+          span#userName.header__greet__name John Doe
+          | .
+        p.header__date
+          | Today is 
+          span#today.header__date__date Monday 01, January, 2020
+      .header__right
+        p#clock.header__time 00:00
+
+    main.main
+      each item in cards
+        a(href=item.link).card
+          i(class=item.icon)
+          p.card__name= item.name
+    
+    // JS
+    script(src="index.js")

@@ -1,2 +1,3 @@
-# root-startpage
-A simple and clean startpage 🌟
+# Root
+
+**Root** is a start-page aimed to simplicity and elegance.
