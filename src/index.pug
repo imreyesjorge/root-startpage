@@ -1,4 +1,6 @@
+// Pages
 -
+  const name = 'John Doe'
   const cards = [
     {
       name: 'Twitter',
@@ -24,6 +26,21 @@
       name: 'Github',
       icon: 'fab fa-github',
       link: 'https://github.com/'
+    },
+    {
+      name: 'Whatsapp',
+      icon: 'fab fa-whatsapp',
+      link: 'https://web.whatsapp.com/'
+    },
+    {
+      name: 'Youtube',
+      icon: 'fab fa-youtube',
+      link: 'https://www.youtube.com/'
+    },
+    {
+      name: 'LinkedIn',
+      icon: 'fab fa-linkedin',
+      link: 'https://www.linkedin.com/'
     }
   ]
 
@@ -35,12 +52,13 @@ html(lang="en")
     title root: ~#
     script(src="https://kit.fontawesome.com/2dadafacbc.js" crossorigin="anonymous")
     link(rel="stylesheet", href="styles/main.scss")
+    base(target="_blank")
   body
     header.header
       .header__left
         h2.header__greet Hello there,
           | 
-          span#userName.header__greet__name John Doe
+          spanName.header__greet__name= name
           | .
         p.header__date
           | Today is 

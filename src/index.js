@@ -6,9 +6,6 @@ const { compileClientWithDependenciesTracked } = require("pug");
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-// display name to be shown
-const name = 'John Doe';
-
 /* Functions */
 function getDate() {
   let d = new Date;
@@ -31,7 +28,5 @@ function getClock() {
 
 /* MAIN */
 
-// set user name
-userName.innerHTML = name;
 getClock();
 getDate();
