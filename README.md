@@ -1,10 +1,10 @@
 
-![](assets/image.png)
+![](assets/Header.png)
 
 ## Root is a start-page aimed to simplicity and elegance.
 
 ### Customizing
-To change the name and the pages edit the **index.pug**
+To change the name and the pages edit the `src/index.pug` file.
 
 ```pug
 -
@@ -61,6 +61,19 @@ To place a new page, just append a new object to the array.
     icon: 'font awesome icon class',
     link: 'url to the page'
 }
+```
+
+### Changing Colors
+Changing colors is easy, just edit the file `src/styles/1-base/_variables.scss` before building.
+
+You're gonna see something like this:
+
+```css
+$primary: #6C5DD3;
+$secondary: #FC9E4F;
+$white: #EFF9F0;
+$background: #333138;
+$background-darker: #1E1C21;
 ```
 
 ## Build
