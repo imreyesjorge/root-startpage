@@ -2,6 +2,7 @@
 ![](assets/Header.png)
 
 ## Root is a start-page aimed to simplicity and elegance.
+[Demo available here](https://imreyesjorge.github.io/root-startpage/)
 
 ### Customizing
 To change the name and the pages edit the `src/index.pug` file.
