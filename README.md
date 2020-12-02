@@ -4,7 +4,16 @@
 ## Root is a start-page aimed to simplicity and elegance.
 [Demo available here](https://imreyesjorge.github.io/root-startpage/)
 
-### Customizing
+# How-to use it
+To use this page, you must first have installed `nodejs` and `npm` so you can build the page after customizing it.
+
+## Needed things
+1. You need to download [nodejs](https://nodejs.org/en/).
+2. Then you simply install it (npm comes with nodejs).
+
+After installing `nodejs` and `npm` you can customize the source code before building the page.
+
+## Customizing
 To change the name and the pages edit the `src/index.pug` file.
 
 ```pug
@@ -79,4 +88,4 @@ $background-darker: #1E1C21;
 
 ## Build
 
-Once edited, run `npm run build` and the page will be stored in `docs`.
+Once edited, open a terminal in the project directory and  run `npm run build` and the page will be stored in `docs`.
