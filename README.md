@@ -1,2 +1,3 @@
-# Root Startpage
-Root is a start-page aimed to simplicity and elegance.
+![](./assets/header.png)
+
+### Root is a start-page aimed to simplicity and elegance
