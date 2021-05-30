@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+/* Custom Variables | Color Scheme */
+
+:root {
+  --primary: #dd2e44;
+  --text-light: #eeeeee;
+  --background: #1e1c21;
+  --background-light: #333138;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--text-light);
+  font-family: "Open Sans", sans-serif;
+
+  padding: 2rem 4rem;
+
+  background-color: var(--background);
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h1 > span {
+  color: var(--primary);
+}
+
+main {
+  margin-top: 4rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#currentDate {
+  color: var(--primary);
+}
+
+#currentTime {
+  font-size: 4rem;
+}
+
+.card:link,
+.card:visited {
+  color: white;
+  text-decoration: none;
+
+  margin: 2rem;
+  padding: 4rem 8rem;
+
+  background-color: var(--background-light);
+  border-radius: 20px;
+  border: 1px solid transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.card:hover,
+.card:focus {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.card:focus > .card__name {
+  bottom: 0;
+}
+
+.card:hover > .card__name {
+  bottom: 0;
+}
+
+.card__icon {
+  font-size: 2rem;
+  font-weight: 700;
+
+  padding: 1rem 1.5rem;
+
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+
+  display: grid;
+  place-items: center;
+}
+
+.card__name {
+  transform: translate(-50%, -50%);
+
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+
+  transition: 0.2s;
+}
