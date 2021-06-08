@@ -9,42 +9,52 @@ const NAME = "Reyes";
 const CARDS = [
   {
     name: "Twitter",
+    icon: "ri-twitter-fill",
     link: "https://twitter.com",
   },
   {
     name: "Hashnode",
+    icon: "ri-chat-1-fill",
     link: "https://hashnode.com/",
   },
   {
     name: "CodeSandbox",
+    icon: "ri-cloud-fill",
     link: "https://codesandbox.io/dashboard/",
   },
   {
     name: "Dribbble",
+    icon: "ri-dribbble-fill",
     link: "https://dribbble.com/",
   },
   {
     name: "Reddit",
+    icon: "ri-reddit-fill",
     link: "https://www.reddit.com/",
   },
   {
     name: "Github",
+    icon: "ri-github-fill",
     link: "https://github.com/",
   },
   {
     name: "Figma",
+    icon: "ri-brush-fill",
     link: "https://www.figma.com/",
   },
   {
     name: "YouTube",
+    icon: "ri-youtube-fill",
     link: "https://www.youtube.com/",
   },
   {
     name: "LinkedIn",
+    icon: "ri-linkedin-fill",
     link: "https://www.linkedin.com/",
   },
   {
     name: "Gmail",
+    icon: "ri-google-fill",
     link: "https://mail.google.com/",
   },
 ];
@@ -121,10 +131,8 @@ const printCards = () => {
     let currentCard = document.createElement("a");
     let currentCardText = document.createElement("p");
     currentCardText.appendChild(document.createTextNode(card.name));
-    let currentCardIcon = document.createElement("p");
-    currentCardIcon.appendChild(
-      document.createTextNode(card.name[0] + card.name[1])
-    );
+    let currentCardIcon = document.createElement("i");
+    currentCardIcon.classList.add(card.icon);
 
     // Style the Card Element
     currentCard.classList.add("card");
