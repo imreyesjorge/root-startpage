@@ -56,6 +56,20 @@ main {
   font-size: 4rem;
 }
 
+@media screen and (max-width: 1250px) {
+  h1 {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+  }
+
+  #currentTime {
+    margin-bottom: 1rem;
+  }
+}
+
 .card:link,
 .card:visited {
   color: white;
