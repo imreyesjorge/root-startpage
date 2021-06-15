@@ -66,13 +66,13 @@ const CARDS = [
 /******************/
 
 const DAYS = [
+  "Sunday",
   "Monday",
   "Tuesday",
   "Wednesday",
   "Thursday",
   "Friday",
   "Saturday",
-  "Sunday",
 ];
 
 const MONTHS = [
