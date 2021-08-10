@@ -43,6 +43,8 @@ main {
 }
 
 .header {
+  font-weight: 600;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,6 +56,7 @@ main {
 
 #currentTime {
   font-size: 4rem;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 1250px) {
@@ -96,8 +99,7 @@ main {
   position: relative;
 
   outline: none;
-
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .card:hover,
@@ -135,5 +137,5 @@ main {
   bottom: -25%;
   left: 50%;
 
-  transition: 0.2s;
+  transition: 0.1s;
 }
