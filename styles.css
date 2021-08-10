@@ -59,6 +59,25 @@ main {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1250px) {
+  h1 {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+  }
+
+  #currentTime {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  #fullDate {
+    text-align: center;
+  }
+}
+
 .card:link,
 .card:visited {
   color: white;
