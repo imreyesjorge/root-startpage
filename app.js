@@ -8,9 +8,34 @@ const NAME = "Reyes";
 
 const CARDS = [
   {
+    name: "Spotify",
+    icon: "ri-spotify-fill",
+    link: "https://open.spotify.com/",
+  },
+  {
+    name: "Reddit",
+    icon: "ri-reddit-fill",
+    link: "https://www.reddit.com/",
+  },
+  {
+    name: "Figma",
+    icon: "ri-brush-fill",
+    link: "https://www.figma.com/",
+  },
+  {
+    name: "Github",
+    icon: "ri-github-fill",
+    link: "https://github.com/",
+  },
+  {
     name: "Twitter",
     icon: "ri-twitter-fill",
     link: "https://twitter.com",
+  },
+  {
+    name: "Dribbble",
+    icon: "ri-dribbble-fill",
+    link: "https://dribbble.com/",
   },
   {
     name: "Hashnode",
@@ -21,26 +46,6 @@ const CARDS = [
     name: "CodeSandbox",
     icon: "ri-cloud-fill",
     link: "https://codesandbox.io/dashboard/",
-  },
-  {
-    name: "Dribbble",
-    icon: "ri-dribbble-fill",
-    link: "https://dribbble.com/",
-  },
-  {
-    name: "Reddit",
-    icon: "ri-reddit-fill",
-    link: "https://www.reddit.com/",
-  },
-  {
-    name: "Github",
-    icon: "ri-github-fill",
-    link: "https://github.com/",
-  },
-  {
-    name: "Figma",
-    icon: "ri-brush-fill",
-    link: "https://www.figma.com/",
   },
   {
     name: "YouTube",
