@@ -1,10 +1,10 @@
 /* Custom Variables | Color Scheme */
 
 :root {
-  --primary: #6e44ff;
+  --primary: #FFC759;
   --text-light: #eeeeee;
-  --background: #1e1c21;
-  --background-light: #333138;
+  --background: #191E29;
+  --background-light: #202633;
 }
 
 *,
@@ -17,7 +17,7 @@
 
 body {
   color: var(--text-light);
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Inter', sans-serif;
 
   padding: 2rem 4rem;
 
@@ -43,7 +43,7 @@ main {
 }
 
 .header {
-  font-weight: 600;
+  font-weight: 400;
   
   display: flex;
   justify-content: space-between;
@@ -83,12 +83,12 @@ main {
   color: white;
   text-decoration: none;
 
-  margin: 2rem;
+  margin: 1.2rem;
   padding: 4rem 8rem;
 
   background-color: var(--background-light);
-  border-radius: 20px;
-  border: 2px solid transparent;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,.05);
 
   display: flex;
   justify-content: center;
@@ -106,6 +106,8 @@ main {
 .card:focus {
   border-color: var(--primary);
   color: var(--primary);
+
+  transform: scale(1.02);
 }
 
 .card:focus > .card__name {
@@ -129,7 +131,7 @@ main {
 }
 
 .card__name {
-  font-weight: 600;
+  font-weight: 400;
 
   transform: translate(-50%, -50%);
 

@@ -8,9 +8,9 @@ const NAME = "Reyes";
 
 const CARDS = [
   {
-    name: "Spotify",
-    icon: "ri-spotify-fill",
-    link: "https://open.spotify.com/",
+    name: "Apple Music",
+    icon: "ri-music-2-fill",
+    link: "https://music.apple.com/us/browse",
   },
   {
     name: "Reddit",
@@ -19,7 +19,7 @@ const CARDS = [
   },
   {
     name: "Figma",
-    icon: "ri-brush-fill",
+    icon: "ri-palette-fill",
     link: "https://www.figma.com/",
   },
   {
@@ -39,7 +39,7 @@ const CARDS = [
   },
   {
     name: "Hashnode",
-    icon: "ri-chat-1-fill",
+    icon: "ri-hashtag",
     link: "https://hashnode.com/",
   },
   {
