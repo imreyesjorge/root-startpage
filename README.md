@@ -55,3 +55,9 @@ To add a new card, just append a new object to the `CARDS` constant. The object 
 ```
 
 > To get the icon class-name, just go to [Remix Icons](https://remixicon.com/), select the desired icon. You should see something like this: `<i class="this-is-the-class-name"></i>`.
+
+To use 24 hour time simply change the time section of `app.js` to
+```
+// Update the Time
+  currentTime.innerHTML = `${currentHour}:${currentMinute}`;
+```
