@@ -1,7 +1,7 @@
 /* Custom Variables | Color Scheme */
 
 :root {
-  --primary: #FFC759;
+  --primary: #9280EF;
   --text-light: #eeeeee;
   --background: #191E29;
   --background-light: #202633;
@@ -17,7 +17,7 @@
 
 body {
   color: var(--text-light);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 
   padding: 2rem 4rem;
 

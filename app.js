@@ -8,9 +8,9 @@ const NAME = "Reyes";
 
 const CARDS = [
   {
-    name: "Apple Music",
-    icon: "ri-music-2-fill",
-    link: "https://music.apple.com/us/browse",
+    name: "Discord",
+    icon: "ri-discord-fill",
+    link: "https://discord.com/app",
   },
   {
     name: "Reddit",
@@ -19,7 +19,7 @@ const CARDS = [
   },
   {
     name: "Figma",
-    icon: "ri-palette-fill",
+    icon: "ri-pen-nib-fill",
     link: "https://www.figma.com/",
   },
   {
@@ -39,12 +39,12 @@ const CARDS = [
   },
   {
     name: "Hashnode",
-    icon: "ri-hashtag",
+    icon: "ri-newspaper-line",
     link: "https://hashnode.com/",
   },
   {
     name: "CodeSandbox",
-    icon: "ri-cloud-fill",
+    icon: "ri-braces-fill",
     link: "https://codesandbox.io/dashboard/",
   },
   {
