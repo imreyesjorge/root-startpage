@@ -1,9 +1,9 @@
 /* Custom Variables | Color Scheme */
 
 :root {
-  --primary: #9280EF;
+  --primary: #9280ef;
   --text-light: #eeeeee;
-  --background: #191E29;
+  --background: #191e29;
   --background-light: #202633;
 }
 
@@ -17,12 +17,16 @@
 
 body {
   color: var(--text-light);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 
   padding: 2rem 4rem;
 
   background-color: var(--background);
   box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -42,9 +46,30 @@ main {
   justify-content: center;
 }
 
+footer {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
+
+  margin-top: 2rem;
+}
+
+footer > a:link,
+footer > a:visited {
+  color: inherit;
+}
+
+footer > a:hover {
+  color: var(--primary);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+}
+
 .header {
   font-weight: 400;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,7 +113,7 @@ main {
 
   background-color: var(--background-light);
   border-radius: 15px;
-  border: 1px solid rgba(255,255,255,.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 
   display: flex;
   justify-content: center;
