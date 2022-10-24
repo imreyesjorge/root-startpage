@@ -51,10 +51,13 @@ To add a new card, just append a new object to the `CARDS` constant. The object 
   name: "<Webpage Name>",
   icon: "<Icon Class-Name>",
   link: "<Webpage Link>"
+  clipboard: true
 },
 ```
 
 > To get the icon class-name, just go to [Remix Icons](https://remixicon.com/), select the desired icon. You should see something like this: `<i class="this-is-the-class-name"></i>`.
+
+> If you prefer to copy the link to the clipboard instead of the default behavior, just add `clipboard: true` to the card object.
 
 To use 24 hour time simply change the time section of `app.js` to
 ```
