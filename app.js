@@ -11,6 +11,7 @@ const CARDS = [
     name: "Discord",
     icon: "ri-discord-fill",
     link: "https://discord.com/app",
+    clipboard: true,
   },
   {
     name: "Reddit",
@@ -142,6 +143,29 @@ const printCards = () => {
     // Style the Card Element
     currentCard.classList.add("card");
     currentCard.href = card.link;
+
+    // Handle the click event
+    currentCard.addEventListener("click", async (event) => {
+      // If the card doesn't have `clipboard: true` don't do anything
+      if (!card.clipboard) return;
+
+      // Prevent the page from opening
+      event.preventDefault();
+      // Copy the href to the clipboard
+      try {
+        await navigator.clipboard.writeText(card.link);
+        currentCard.blur();
+        currentCardText.innerText = "Saved to clipboard!";
+        setTimeout(() => {
+          currentCardText.innerText = card.name;
+        }, 1500);
+      } catch {
+        currentCardText.innerText = "Unable to copy";
+        setTimeout(() => {
+          currentCardText.innerText = card.name;
+        }, 1500);
+      }
+    });
 
     // Style the Icon
     currentCardIcon.classList.add("card__icon");
