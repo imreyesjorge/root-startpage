@@ -8,7 +8,7 @@ This project is blazing fast :zap:, it only contains an html, css and javascript
 
 Root was created to be lightweight, fast and easy to customize.
 
-### Changin Colors
+### Changing Colors
 
 To change the colors used in the startpage edit `styles.css`.
 
@@ -21,7 +21,7 @@ To change the colors used in the startpage edit `styles.css`.
 }
 ```
 
-### Changin Name and Adding Custom Cards
+### Changing Name and Adding Custom Cards
 
 > This project uses [Remix Icons](https://remixicon.com/).
 
