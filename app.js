@@ -17,6 +17,7 @@ const CARDS = [
     name: "Reddit",
     icon: "ri-reddit-fill",
     link: "https://www.reddit.com/",
+    color: "orange",
   },
   {
     name: "Figma",
@@ -124,6 +125,35 @@ const updateDate = () => {
   }, 1000);
 };
 
+const addCustomColorListener = (htmlNode, customColor) => {
+  // If a `customColor` isn't provided, don't do anything
+  if (!customColor) return;
+
+  // Add custom color whenever the cursor enters the card
+  htmlNode.addEventListener("mouseenter", () => {
+    htmlNode.style.color = customColor;
+    htmlNode.style.borderColor = customColor;
+  });
+
+  // Remove custom color whenever the cursor leaves the card
+  htmlNode.addEventListener("mouseleave", () => {
+    htmlNode.style.color = "white";
+    htmlNode.style.borderColor = "rgba(255, 255, 255, 0.05)";
+  });
+
+  // Add custom color whenever the card is focused
+  htmlNode.addEventListener("focus", () => {
+    htmlNode.style.color = customColor;
+    htmlNode.style.borderColor = customColor;
+  });
+
+  // Remove custom color whenever the card is blurred
+  htmlNode.addEventListener("blur", () => {
+    htmlNode.style.color = "white";
+    htmlNode.style.borderColor = "rgba(255, 255, 255, 0.05)";
+  });
+};
+
 const formatDigit = (digit) => {
   return digit > 9 ? `${digit}` : `0${digit}`;
 };
@@ -143,6 +173,8 @@ const printCards = () => {
     // Style the Card Element
     currentCard.classList.add("card");
     currentCard.href = card.link;
+
+    addCustomColorListener(currentCard, card?.color);
 
     // Handle the click event
     currentCard.addEventListener("click", async (event) => {
