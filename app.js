@@ -4,9 +4,26 @@
 
 /* -------------------------------------------------------- */
 
-const NAME = "Melih";
+const NAME = "Reyes";
 
 const CARDS = [
+  {
+    name: "Discord",
+    icon: "ri-discord-fill",
+    link: "https://discord.com/app",
+    color: "#5865F2",
+  },
+  {
+    name: "Reddit",
+    icon: "ri-reddit-fill",
+    link: "https://www.reddit.com/",
+    color: "#FF4500",
+  },
+  {
+    name: "Figma",
+    icon: "ri-pen-nib-fill",
+    link: "https://www.figma.com/",
+  },
   {
     name: "Github",
     icon: "ri-github-fill",
@@ -44,6 +61,11 @@ const CARDS = [
     name: "LinkedIn",
     icon: "ri-linkedin-fill",
     link: "https://www.linkedin.com/",
+  },
+  {
+    name: "Gmail",
+    icon: "ri-google-fill",
+    link: "https://mail.google.com/",
   },
 ];
 
