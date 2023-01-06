@@ -1,0 +1,17 @@
+
+$card-colors: (
+    "white": #f8f8f2,
+    "red": #ff5555,
+    "orange": #ffb86c,
+    "yellow": #f1fA8c,
+    "green": #50fA7b,
+    "purple": #bd93f9,
+    "cyan": #8be9fd,
+    "pink": #ff79c6,
+);
+
+$primary: map-get($card-colors, "purple");
+$text-light: map-get($card-colors, "white");;
+$card-color: map-get($card-colors, "white");;
+$background: #21222c;
+$background-light: #282a36;

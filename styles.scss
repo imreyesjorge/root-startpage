@@ -1,0 +1,163 @@
+/* Custom Variables | Color Scheme */
+
+@use "theme";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    color: theme.$text-light;
+    font-family: "Open Sans", sans-serif;
+
+    padding: 2rem 4rem;
+
+    background-color: theme.$background;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+
+    & > span {
+        color: theme.$primary;
+    }
+}
+
+main {
+    margin-top: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+
+    margin-top: 2rem;
+
+    & > a {
+        &:link,
+        &:visited {
+            color: inherit;
+        }
+
+        &:hover {
+            color: theme.$primary;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+}
+
+.header {
+    font-weight: 400;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#currentDate {
+    color: theme.$primary;
+}
+
+#currentTime {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1250px) {
+    h1 {
+        display: none;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    #currentTime {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    #fullDate {
+        text-align: center;
+    }
+}
+
+.card {
+    &:link,
+    &:visited {
+        color: theme.$card-color;
+        text-decoration: none;
+
+        margin: 1.2rem;
+        padding: 4rem 8rem;
+
+        background-color: theme.$background-light;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+
+        outline: none;
+        transition: 0.1s;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: theme.$primary;
+        color: theme.$primary;
+
+        transform: scale(1.02);
+
+        & > .card__name {
+            bottom: 0;
+        }
+    }
+
+    &__icon {
+        font-size: 2rem;
+
+        padding: 1rem;
+
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 50%;
+
+        display: grid;
+        place-items: center;
+    }
+
+    &__name {
+        font-weight: 400;
+
+        transform: translate(-50%, -50%);
+
+        position: absolute;
+        bottom: -25%;
+        left: 50%;
+
+        transition: 0.1s;
+    }
+}

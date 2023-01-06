@@ -11,13 +11,13 @@ const CARDS = [
     name: "Discord",
     icon: "ri-discord-fill",
     link: "https://discord.com/app",
-    color: "#5865F2",
+    color: "discord",
   },
   {
     name: "Reddit",
     icon: "ri-reddit-fill",
     link: "https://www.reddit.com/",
-    color: "#FF4500",
+    color: "reddit",
   },
   {
     name: "Figma",
@@ -33,13 +33,13 @@ const CARDS = [
     name: "Twitter",
     icon: "ri-twitter-fill",
     link: "https://twitter.com",
-    color: "#1DA1F2",
+    color: "twitter",
   },
   {
     name: "Dribbble",
     icon: "ri-dribbble-fill",
     link: "https://dribbble.com/",
-    color: "#ea4c89",
+    color: "dribbble",
   },
   {
     name: "Hashnode",
@@ -55,7 +55,7 @@ const CARDS = [
     name: "YouTube",
     icon: "ri-youtube-fill",
     link: "https://www.youtube.com/",
-    color: "#FF0000",
+    color: "youtube",
   },
   {
     name: "LinkedIn",
@@ -134,8 +134,9 @@ const addCustomColorListener = (htmlNode, card) => {
 
   // Add custom color whenever the cursor enters the card
   htmlNode.addEventListener("mouseenter", (event) => {
-    htmlNode.style.color = card.color;
-    htmlNode.style.borderColor = card.color;
+    
+    htmlNode.classList.add(`${card.color}-fg`, `${card.color}-border`)
+    htmlNode.classList.remove("card-color")
 
     event.target.setAttribute("isHovered", true);
   });
@@ -145,14 +146,15 @@ const addCustomColorListener = (htmlNode, card) => {
     event.target.setAttribute("isHovered", false);
     if (event.target.getAttribute("isFocused") == "true") return;
 
-    htmlNode.style.color = "white";
-    htmlNode.style.borderColor = "rgba(255, 255, 255, 0.05)";
+    htmlNode.classList.add("card-color")
+    htmlNode.classList.remove(`${card.color}-fg`, `${card.color}-border`)
   });
 
   // Add custom color whenever the card is focused
   htmlNode.addEventListener("focus", (event) => {
-    htmlNode.style.color = card.color;
-    htmlNode.style.borderColor = card.color;
+
+    htmlNode.classList.add(`${card.color}-fg`, `${card.color}-border`)
+    htmlNode.classList.remove("card-color")
 
     event.target.setAttribute("isFocused", true);
   });
@@ -162,8 +164,8 @@ const addCustomColorListener = (htmlNode, card) => {
     event.target.setAttribute("isFocused", false);
     if (event.target.getAttribute("isHovered") == "true") return;
 
-    htmlNode.style.color = "white";
-    htmlNode.style.borderColor = "rgba(255, 255, 255, 0.05)";
+    htmlNode.classList.add("card-color")
+    htmlNode.classList.remove(`${card.color}-fg`, `${card.color}-border`)
   });
 };
 

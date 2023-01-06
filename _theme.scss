@@ -1,0 +1,15 @@
+@forward "themes/original-theme" hide $card-colors;
+@use "themes/original-theme" as theme;
+
+@each $color-name, $color-code in theme.$card-colors {
+    .#{$color-name}-fg {
+        color: $color-code !important;
+    }
+    .#{$color-name}-border {
+        border-color: $color-code !important;
+    }
+}
+
+.card-color {
+    color: theme.$card-color !important;
+}
