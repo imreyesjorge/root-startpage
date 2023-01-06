@@ -11,13 +11,13 @@ const CARDS = [
     name: "Discord",
     icon: "ri-discord-fill",
     link: "https://discord.com/app",
-    color: "#5865F2",
+    color: "discord",
   },
   {
     name: "Reddit",
     icon: "ri-reddit-fill",
     link: "https://www.reddit.com/",
-    color: "#FF4500",
+    color: "reddit",
   },
   {
     name: "Figma",
@@ -33,13 +33,13 @@ const CARDS = [
     name: "Twitter",
     icon: "ri-twitter-fill",
     link: "https://twitter.com",
-    color: "#1DA1F2",
+    color: "twitter",
   },
   {
     name: "Dribbble",
     icon: "ri-dribbble-fill",
     link: "https://dribbble.com/",
-    color: "#ea4c89",
+    color: "dribbble",
   },
   {
     name: "Hashnode",
@@ -55,7 +55,7 @@ const CARDS = [
     name: "YouTube",
     icon: "ri-youtube-fill",
     link: "https://www.youtube.com/",
-    color: "#FF0000",
+    color: "youtube",
   },
   {
     name: "LinkedIn",

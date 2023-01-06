@@ -1,65 +1,42 @@
-.white-fg {
-  color: #f8f8f2 !important;
+/* TODO */
+.discord-fg {
+  color: #5865f2 !important;
 }
 
-.white-border {
-  border-color: #f8f8f2 !important;
+.discord-border {
+  border-color: #5865f2 !important;
 }
 
-.red-fg {
-  color: #ff5555 !important;
+.reddit-fg {
+  color: #ff4500 !important;
 }
 
-.red-border {
-  border-color: #ff5555 !important;
+.reddit-border {
+  border-color: #ff4500 !important;
 }
 
-.orange-fg {
-  color: #ffb86c !important;
+.twitter-fg {
+  color: #1da1f2 !important;
 }
 
-.orange-border {
-  border-color: #ffb86c !important;
+.twitter-border {
+  border-color: #1da1f2 !important;
 }
 
-.yellow-fg {
-  color: #f1fA8c !important;
+.dribbble-fg {
+  color: #ea4c89 !important;
 }
 
-.yellow-border {
-  border-color: #f1fA8c !important;
+.dribbble-border {
+  border-color: #ea4c89 !important;
 }
 
-.green-fg {
-  color: #50fA7b !important;
+.youtube-fg {
+  color: #ff0000 !important;
 }
 
-.green-border {
-  border-color: #50fA7b !important;
-}
-
-.purple-fg {
-  color: #bd93f9 !important;
-}
-
-.purple-border {
-  border-color: #bd93f9 !important;
-}
-
-.cyan-fg {
-  color: #8be9fd !important;
-}
-
-.cyan-border {
-  border-color: #8be9fd !important;
-}
-
-.pink-fg {
-  color: #ff79c6 !important;
-}
-
-.pink-border {
-  border-color: #ff79c6 !important;
+.youtube-border {
+  border-color: #ff0000 !important;
 }
 
 .card-color {
@@ -76,10 +53,10 @@
 }
 
 body {
-  color: #f8f8f2;
+  color: #eeeeee;
   font-family: "Open Sans", sans-serif;
   padding: 2rem 4rem;
-  background-color: #21222c;
+  background-color: #0d1b2a;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -91,7 +68,7 @@ h1 {
   font-weight: bold;
 }
 h1 > span {
-  color: #bd93f9;
+  color: #ffd166;
 }
 
 main {
@@ -110,7 +87,7 @@ footer > a:link, footer > a:visited {
   color: inherit;
 }
 footer > a:hover {
-  color: #bd93f9;
+  color: #ffd166;
 }
 
 .container {
@@ -126,7 +103,7 @@ footer > a:hover {
 }
 
 #currentDate {
-  color: #bd93f9;
+  color: #ffd166;
 }
 
 #currentTime {
@@ -150,11 +127,11 @@ footer > a:hover {
   }
 }
 .card:link, .card:visited {
-  color: #f8f8f2;
+  color: white;
   text-decoration: none;
   margin: 1.2rem;
   padding: 4rem 8rem;
-  background-color: #282a36;
+  background-color: #1b263b;
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
@@ -167,8 +144,8 @@ footer > a:hover {
   transition: 0.1s;
 }
 .card:hover, .card:focus {
-  border-color: #bd93f9;
-  color: #bd93f9;
+  border-color: #ffd166;
+  color: #ffd166;
   transform: scale(1.02);
 }
 .card:hover > .card__name, .card:focus > .card__name {

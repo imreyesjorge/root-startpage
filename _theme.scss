@@ -1,7 +1,7 @@
-@forward "themes/dracula-theme" hide $card-colors;
-@use "themes/dracula-theme";
+@forward "themes/original-theme" hide $card-colors;
+@use "themes/original-theme" as theme;
 
-@each $color-name, $color-code in dracula-theme.$card-colors {
+@each $color-name, $color-code in theme.$card-colors {
     .#{$color-name}-fg {
         color: $color-code !important;
     }
