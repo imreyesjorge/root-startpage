@@ -1,0 +1,15 @@
+@forward "themes/dracula-theme" hide $card-colors;
+@use "themes/dracula-theme";
+
+@each $color-name, $color-code in dracula-theme.$card-colors {
+    .#{$color-name}-fg {
+        color: $color-code !important;
+    }
+    .#{$color-name}-border {
+        border-color: $color-code !important;
+    }
+}
+
+.card-color {
+    color: dracula-theme !important;
+}

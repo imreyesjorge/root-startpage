@@ -1,12 +1,72 @@
-/* Custom Variables | Color Scheme */
-
-:root {
-  --primary: #ffd166;
-  --text-light: #eeeeee;
-  --background: #0d1b2a;
-  --background-light: #1b263b;
+.white-fg {
+  color: #f8f8f2 !important;
 }
 
+.white-border {
+  border-color: #f8f8f2 !important;
+}
+
+.red-fg {
+  color: #ff5555 !important;
+}
+
+.red-border {
+  border-color: #ff5555 !important;
+}
+
+.orange-fg {
+  color: #ffb86c !important;
+}
+
+.orange-border {
+  border-color: #ffb86c !important;
+}
+
+.yellow-fg {
+  color: #f1fA8c !important;
+}
+
+.yellow-border {
+  border-color: #f1fA8c !important;
+}
+
+.green-fg {
+  color: #50fA7b !important;
+}
+
+.green-border {
+  border-color: #50fA7b !important;
+}
+
+.purple-fg {
+  color: #bd93f9 !important;
+}
+
+.purple-border {
+  border-color: #bd93f9 !important;
+}
+
+.cyan-fg {
+  color: #8be9fd !important;
+}
+
+.cyan-border {
+  border-color: #8be9fd !important;
+}
+
+.pink-fg {
+  color: #ff79c6 !important;
+}
+
+.pink-border {
+  border-color: #ff79c6 !important;
+}
+
+.card-color {
+  color: dracula-theme !important;
+}
+
+/* Custom Variables | Color Scheme */
 *,
 *::before,
 *::after {
@@ -16,14 +76,11 @@
 }
 
 body {
-  color: var(--text-light);
+  color: #f8f8f2;
   font-family: "Open Sans", sans-serif;
-
   padding: 2rem 4rem;
-
-  background-color: var(--background);
+  background-color: #21222c;
   box-sizing: border-box;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,14 +90,12 @@ h1 {
   font-size: 4rem;
   font-weight: bold;
 }
-
 h1 > span {
-  color: var(--primary);
+  color: #bd93f9;
 }
 
 main {
   margin-top: 4rem;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -49,17 +104,13 @@ main {
 footer {
   color: rgba(255, 255, 255, 0.4);
   font-size: 0.8rem;
-
   margin-top: 2rem;
 }
-
-footer > a:link,
-footer > a:visited {
+footer > a:link, footer > a:visited {
   color: inherit;
 }
-
 footer > a:hover {
-  color: var(--primary);
+  color: #bd93f9;
 }
 
 .container {
@@ -69,14 +120,13 @@ footer > a:hover {
 
 .header {
   font-weight: 400;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 #currentDate {
-  color: var(--primary);
+  color: #bd93f9;
 }
 
 #currentTime {
@@ -88,81 +138,55 @@ footer > a:hover {
   h1 {
     display: none;
   }
-
   .header {
     flex-direction: column-reverse;
   }
-
   #currentTime {
     font-size: 3rem;
     margin-bottom: 1rem;
   }
-
   #fullDate {
     text-align: center;
   }
 }
-
-.card:link,
-.card:visited {
-  color: white;
+.card:link, .card:visited {
+  color: #f8f8f2;
   text-decoration: none;
-
   margin: 1.2rem;
   padding: 4rem 8rem;
-
-  background-color: var(--background-light);
+  background-color: #282a36;
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.05);
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   overflow: hidden;
   cursor: pointer;
   position: relative;
-
   outline: none;
   transition: 0.1s;
 }
-
-.card:hover,
-.card:focus {
-  border-color: var(--primary);
-  color: var(--primary);
-
+.card:hover, .card:focus {
+  border-color: #bd93f9;
+  color: #bd93f9;
   transform: scale(1.02);
 }
-
-.card:focus > .card__name {
+.card:hover > .card__name, .card:focus > .card__name {
   bottom: 0;
 }
-
-.card:hover > .card__name {
-  bottom: 0;
-}
-
 .card__icon {
   font-size: 2rem;
-
   padding: 1rem;
-
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
-
   display: grid;
   place-items: center;
 }
-
 .card__name {
   font-weight: 400;
-
   transform: translate(-50%, -50%);
-
   position: absolute;
   bottom: -25%;
   left: 50%;
-
   transition: 0.1s;
-}
+}/*# sourceMappingURL=styles.css.map */
