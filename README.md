@@ -1,69 +1,54 @@
-![](./assets/header.png)
+# Astro Starter Kit: Basics
 
-### Root is a start-page aimed to simplicity and elegance
-
-This project is blazing fast :zap:, it only contains an html, css and javascript files.
-
-## Customizing
-
-Root was created to be lightweight, fast and easy to customize.
-
-### Changing Colors
-
-To change the colors used in the startpage edit `styles.css`.
-
-```css
-:root {
-  --primary: #dd2e44;
-  --text-light: #eeeeee;
-  --background: #1e1c21;
-  --background-light: #333138;
-}
+```sh
+npm create astro@latest -- --template basics
 ```
 
-### Changing Name and Adding Custom Cards
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-> This project uses [Remix Icons](https://remixicon.com/).
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-To change the default name and edit the cards, edit `app.js`. It should look something like this:
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-```js
-const NAME = "John Doe";
+## 🚀 Project Structure
 
-const CARDS = [
-  {
-    name: "Twitter",
-    icon: "ri-twitter-fill",
-    link: "https://twitter.com",
-  },
-  {
-    name: "Github",
-    icon: "ri-github-fill",
-    link: "https://github.com/",
-  },
-];
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
-To add a new card, just append a new object to the `CARDS` constant. The object should look something like this:
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-```js
-{
-  name: "<Webpage Name>",
-  icon: "<Icon Class-Name>",
-  link: "<Webpage Link>",
-  clipboard: true,
-  color: '#550499'
-},
-```
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-> To get the icon class-name, just go to [Remix Icons](https://remixicon.com/), select the desired icon. You should see something like this: `<i class="this-is-the-class-name"></i>`.
+Any static assets, like images, can be placed in the `public/` directory.
 
-> If you prefer to copy the link to the clipboard instead of the default behavior, just add `clipboard: true` to the card object.
+## 🧞 Commands
 
-> Optional individual card accent color can be achieved by setting a `color: string` property in the card object. 
+All commands are run from the root of the project, from a terminal:
 
-To use 24 hour time simply change the time section of `app.js` to
-```
-// Update the Time
-  currentTime.innerHTML = `${currentHour}:${currentMinute}`;
-```
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

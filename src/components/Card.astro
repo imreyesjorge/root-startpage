@@ -1,0 +1,86 @@
+---
+import { SECONDARY_BACKGROUND } from "../constants";
+interface Props {
+   card: Card;
+}
+
+const { name, color, link, icon } = Astro.props.card;
+let cssColor: string;
+
+// the default color is #eee
+// but if we have a color it's going to be used
+
+if (!color) cssColor = "#eee";
+else cssColor = color;
+---
+
+<a href={link} class="card" target="_blank">
+   <i class=`card__icon ${icon}`></i>
+   <p class="card__name">{name}</p>
+</a>
+
+<style define:vars={{ cssColor, SECONDARY_BACKGROUND }}>
+   .card:link,
+   .card:visited {
+      color: white;
+      text-decoration: none;
+
+      margin: 1.2rem;
+      padding: 4rem 8rem;
+
+      background-color: var(--SECONDARY_BACKGROUND);
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+
+      flex: 1 1 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+
+      outline: none;
+      transition: 0.25s;
+   }
+
+   .card:hover {
+      border-color: var(--cssColor);
+      color: var(--cssColor);
+
+      transform: scale(1.04);
+   }
+
+   .card:focus > .card__name {
+      bottom: 0;
+   }
+
+   .card:hover > .card__name {
+      bottom: 0;
+   }
+
+   .card__icon {
+      font-size: 2rem;
+
+      padding: 1rem;
+
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+
+      display: grid;
+      place-items: center;
+   }
+
+   .card__name {
+      font-weight: 400;
+
+      transform: translate(-50%, -50%);
+
+      position: absolute;
+      bottom: -25%;
+      left: 50%;
+
+      transition: 0.25s;
+   }
+</style>

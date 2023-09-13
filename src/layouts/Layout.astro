@@ -1,0 +1,82 @@
+---
+import { ACCENT_COLOR, BACKGROUND_COLOR, TEXT_COLOR } from "../constants";
+---
+
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="description" content="Astro description" />
+      <meta name="viewport" content="width=device-width" />
+      <link
+         href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+         rel="stylesheet"
+      />
+      <title>HOME</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+         rel="stylesheet"
+      />
+   </head>
+   <body>
+      <slot />
+   </body>
+</html>
+
+<style
+   is:global
+   define:vars={{
+      ACCENT_COLOR,
+      BACKGROUND_COLOR,
+      TEXT_COLOR,
+   }}
+>
+   :root {
+      --background-light: #121824;
+   }
+
+   *,
+   *::before,
+   *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+   }
+
+   body {
+      color: var(--TEXT_COLOR);
+      font-family: "Open Sans", sans-serif;
+
+      padding: 2rem 4rem;
+
+      background-color: var(--BACKGROUND_COLOR);
+      box-sizing: border-box;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   h1 {
+      font-size: 4rem;
+      font-weight: bold;
+   }
+
+   h1 > span {
+      color: var(--ACCENT_COLOR);
+   }
+
+   main {
+      margin-top: 4rem;
+
+      display: flex;
+      flex-wrap: wrap;
+   }
+   @media screen and (max-width: 1250px) {
+      h1 {
+         display: none;
+      }
+   }
+</style>
