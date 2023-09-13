@@ -5,10 +5,16 @@
 /* -------------------------------------------------------- */
 
 export const NAME = "Sharon";
+
 export const ACCENT_COLOR = "#d21404";
+
 export const TEXT_COLOR = "#eee";
+
 export const BACKGROUND_COLOR = "#0d1b2a";
+
 export const SECONDARY_BACKGROUND = "#1b263b";
+
+export const TRANSITION_DURATION = "0.2s";
 
 
 export const CARDS: Card[] = [

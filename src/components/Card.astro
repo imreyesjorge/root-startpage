@@ -1,5 +1,5 @@
 ---
-import { SECONDARY_BACKGROUND } from "../constants";
+import { SECONDARY_BACKGROUND, TRANSITION_DURATION } from "../constants";
 interface Props {
    card: Card;
 }
@@ -19,7 +19,7 @@ else cssColor = color;
    <p class="card__name">{name}</p>
 </a>
 
-<style define:vars={{ cssColor, SECONDARY_BACKGROUND }}>
+<style define:vars={{ cssColor, SECONDARY_BACKGROUND, TRANSITION_DURATION }}>
    .card:link,
    .card:visited {
       color: white;
@@ -42,7 +42,7 @@ else cssColor = color;
       position: relative;
 
       outline: none;
-      transition: 0.25s;
+      transition: var(--TRANSITION_DURATION);
    }
 
    .card:hover {
@@ -81,6 +81,6 @@ else cssColor = color;
       bottom: -25%;
       left: 50%;
 
-      transition: 0.25s;
+      transition: var(--TRANSITION_DURATION);
    }
 </style>
